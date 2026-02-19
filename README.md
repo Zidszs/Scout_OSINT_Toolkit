@@ -11,19 +11,19 @@ O projeto está dividido em dois scripts principais. Escolha a ferramenta que me
 
 1. Scout GUI Toolkit (Scout_gui_toolkit.py)
 O Canivete Suíço de OSINT: Uma ferramenta exploratória, de utilitários e de reconhecimento ativo com interface gráfica completa.
-Principais Funcionalidades:
-Ferramentas OSINT & Criptografia: Inclui pesquisa avançada de WHOIS/GeoIP, Gerador de Senhas Seguras, Calculadora de Força Bruta (Entropia) e Extrator de Cabeçalhos HTTP.
-Monitorização Local (Sniffer): Captura e disseca pacotes TCP, UDP e ICMP da sua interface de rede, com extração de SNI (Server Name Indication) para identificar domínios acessados mesmo em conexões HTTPS.
-Scanner de LAN e Portas: Integração com o motor Nmap para descobrir outros dispositivos na mesma rede local e mapear portas abertas com deteção de serviço (-sV).
-Análise Comportamental Básica (NBA): Categoriza automaticamente se o seu tráfego atual parece ser Streaming, Gaming, Download ou Navegação Web.
+  Principais Funcionalidades:
+    Ferramentas OSINT & Criptografia: Inclui pesquisa avançada de WHOIS/GeoIP, Gerador de Senhas Seguras, Calculadora de Força Bruta (Entropia) e Extrator de Cabeçalhos HTTP.
+    Monitorização Local (Sniffer): Captura e disseca pacotes TCP, UDP e ICMP da sua interface de rede, com extração de SNI (Server Name Indication) para identificar domínios acessados mesmo em conexões HTTPS.
+    Scanner de LAN e Portas: Integração com o motor Nmap para descobrir outros dispositivos na mesma rede local e mapear portas abertas com deteção de serviço (-sV).
+    Análise Comportamental Básica (NBA): Categoriza automaticamente se o seu tráfego atual parece ser Streaming, Gaming, Download ou Navegação Web.
 
 2. Scout Monitor (Scout_monitor.py)
 O Guarda-Costas Pessoal (HIDS): Um Sistema de Deteção de Intrusões (IDS) estritamente focado em proteger a máquina onde está a correr. Trabalha de forma autônoma para detetar anomalias no seu tráfego de rede.
-Principais Funcionalidades:
-Motor de Alertas e Ameaças (Threat Analyzer): Roda em segundo plano avaliando riscos de segurança em tempo real.
-Deteção de Exfiltração: Alerta se a sua máquina começar a enviar volumes massivos de dados (Upload alto) para um IP não reconhecido/público (comportamento típico de roubo de dados/malware).
-Alerta de Credenciais Inseguras: Dispara um alerta "CRÍTICO" se detetar credenciais (ex: password=, login=) a serem transmitidas em texto claro através da rede.
-Sistema de Alarmes Intrusivos: Em caso de risco Alto ou Crítico, a aplicação muda de cor (para vermelho escuro), emite um som de aviso no sistema e traz a janela imediatamente para o primeiro plano.
+ Principais Funcionalidades:
+  Motor de Alertas e Ameaças (Threat Analyzer): Roda em segundo plano avaliando riscos de segurança em tempo real.
+  Deteção de Exfiltração: Alerta se a sua máquina começar a enviar volumes massivos de dados (Upload alto) para um IP não reconhecido/público (comportamento típico de roubo de dados/malware).
+  Alerta de Credenciais Inseguras: Dispara um alerta "CRÍTICO" se detetar credenciais (ex: password=, login=) a serem transmitidas em texto claro através da rede.
+  Sistema de Alarmes Intrusivos: Em caso de risco Alto ou Crítico, a aplicação muda de cor (para vermelho escuro), emite um som de aviso no sistema e traz a janela imediatamente para o primeiro plano.
 
 🛠️ Detalhes Técnicos e Arquitetura "Pro"
 Ambas as ferramentas foram desenhadas com foco em performance e estabilidade:
