@@ -58,7 +58,7 @@ Python 3.8+ instalado no sistema.
 
 Nmap instalado nativamente no sistema operativo:
 
-Windows: Baixe e instale a partir de nmap.org/download. O script deteta o caminho padrão.
+Windows: Baixe e instale a partir de nmap.org/download. O script detecta o caminho padrão.
 
 Linux: sudo apt-get install nmap
 
